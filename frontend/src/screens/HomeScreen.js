@@ -4,7 +4,6 @@ import { Row, Col } from 'react-bootstrap'
 import Product from '../components/Product.js'
 import Message from '../components/Message.js'
 import Loader from '../components/Loader.js'
-import axios from 'axios'
 import { listProducts } from '../actions/productActions.js'
 
 const HomeScreen = () => {
