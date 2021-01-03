@@ -9,13 +9,13 @@ const orderSchema = mongoose.Schema(
     },
     orderItems: [
       {
-        name: { type: String, require: true },
-        qty: { type: Number, require: true },
-        image: { type: String, require: true },
-        price: { type: Number, require: true },
+        name: { type: String, required: true },
+        qty: { type: Number, required: true },
+        image: { type: String, required: true },
+        price: { type: Number, required: true },
         product: {
           type: mongoose.Schema.Types.ObjectId,
-          require: true,
+          required: true,
           ref: 'Product',
         },
       },
@@ -34,7 +34,7 @@ const orderSchema = mongoose.Schema(
       id: { type: String },
       status: { type: String },
       update_time: { type: String },
-      email_adress: { type: String },
+      email_address: { type: String },
     },
     taxPrice: {
       type: Number,
